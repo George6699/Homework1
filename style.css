@@ -1,64 +1,20 @@
-h1{ 
-    color: purple; 
-    font-size: 14; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.ordinary{
+    font-size: 18px;
+	color: rgb(68, 161, 14);
+	font-family: Arial;
 }
-h2{
-    color: rgb(115, 128, 0);
+#Line1 {
+    list-style-type: none;
 }
-h3{
-    color: plum;
+#Line1:before {
+    content: "·";
 }
-h4{
-    color: rgb(124, 73, 92); 
-    font-size: 12; 
-    font-family: cursive;
+#Line2 {
+    list-style-type: none;
 }
-abbr{
-    color: red;
+#Line2:before {
+    content: "§";
 }
-p1{
-    color: goldenrod; 
-    font-size: 5; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p2{
-    color: greenyellow; 
-    font-size: 9; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-p3{
-    color: rgb(47, 255, 210); 
-    font-size: 11; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.letter1{
-    color: brown; 
-    font-size: 200%; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    top: 10px;
-    position: relative;
-}
-.letter2{
-    color: rgb(42, 81, 165); 
-    font-size: 150%; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    top: 15px;
-    position: relative;
-}
-.letter3{
-    color: rgb(42, 165, 118); 
-    font-size: 300%; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    top: 5px;
-    position: relative;
-}
-.ul1{
-    list-style-type: initial;
-}
-.ul2{
-    list-style-type: square;
-}
-.ul3{
+#Line3 {
     list-style-type: circle;
 }
