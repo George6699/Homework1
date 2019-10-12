@@ -1,0 +1,20 @@
+.ordinary{
+    font-size: 18px;
+	color: rgb(68, 161, 14);
+	font-family: Arial;
+}
+#Line1 {
+    list-style-type: none;
+}
+#Line1:before {
+    content: "·";
+}
+#Line2 {
+    list-style-type: none;
+}
+#Line2:before {
+    content: "§";
+}
+#Line3 {
+    list-style-type: circle;
+}

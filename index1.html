@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/Homework.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Моя первая страница</title>
+    <style>
+    body{
+    font-family: Arial, sens-serif
+    }
+    .letter1{
+    color: brown; 
+    font-size: 200%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    top: 10px;
+    position: relative;
+    }
+    .letter2{
+    color: rgb(42, 81, 165); 
+    font-size: 150%; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    top: 15px;
+    position: relative;
+    }
+    .letter3{
+    color: rgb(42, 165, 118); 
+    font-size: 300%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    top: 5px;
+    position: relative;
+    }
+    .ul1{
+        list-style-type: initial;
+    }
+    .ul2{
+        list-style-type: square;
+    }
+    .ul3{
+        list-style-image: circle;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./index1_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./index1_files/style1.css">
+</head>
+<body>
+    
+    <h1 align="center"><font size="14" color="purple" face="serif">  
+        Я, <a href="http://127.0.0.1:5500/Homework1.html" target="_blank">Воложинец Г.В.</a>, изучаю
+        <abbr title="Hypertext Markup Language"><font color="red">HTML</font></abbr>, CSS, JS.</font></h1>
+        <h2 align="center"><font color="rgb(115, 128, 0)">Краткая биография</font></h2>
+        <h3 align="center"><font color="plum">Что? Где? Когда?</font></h3>
+
+        <p class="ordinary" align="left">
+            
+Я Воложинец Г.В., родился и живу в городе Минске.
+У меня есть <span class="letter1">два брата.</span>
+День рождения у мен 14 октября.
+            
+        
+        </p>
+
+        <h3 id="P1" align="center">Мои увлечения</h3>
+
+ <p align="left"><font size="8" color="green" face="Tahoma">
+            
+            </font></p><pre><font size="8" color="green" face="Tahoma"><span class="letter2">Я увлекаюсь</span> игрой на гитаре.
+Также увлекаюсь рисованием.
+Очень люблю кофе.
+            </font></pre><font size="8" color="green" face="Tahoma">
+        </font>
+            <p></p>
+
+            <h3 id="P2" align="center">Моя учеба</h3>
+
+<p id="P2" align="left"><font size="4" color="grey" face="Arial">
+
+Я учился в школе.<br>
+Потом закончил гимназию.<br>
+И в <span class="letter3">2010 закончил</span> университет.
+        </font>
+        </p>
+
+<div>
+    <h4 align="center"><font size="5" color="rgb(124, 73, 92)" face="cursive">Мой первый список</font></h4>
+        <ul style="list-style-type:decimal">
+            <li>Пункт1</li>
+            <ul>
+                <li id="Line1">Пункт1.1</li>
+                <li id="Line1">Пункт1.2</li>
+            </ul>
+            <li>Пункт2</li>
+            <ul>
+                <li id="Line2">Пункт2.1</li>
+                <li id="Line2">Пункт2.2</li>
+            </ul>
+            <li>Пункт3</li>
+            <ul>
+                <li id="Line3">Пункт3.1</li>
+                <li id="Line3">Пункт3.2</li>
+            </ul>
+        </ul>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>
